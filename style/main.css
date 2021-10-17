@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    background: #EDF4F5;
+}
+.wrapper {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.text__title {
+    font-size: 20px;
+}
+.text__tag{
+    height: 20px;
+    padding: 5px;
+    background: #054950;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.top_info {
+    width: 100%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
+.top_info .wrapper {
+}
+.top_info .wrapper .top_info__links {
+    width: 40%;
+}
+.top_info__links a {
+    margin-right: 30px;
+}
+.top_info .wrapper .top_info__phone {
+    width: 33%;
+    display: flex;
+    justify-content: flex-end;
+}
+.top_info__phone a {
+    margin-left: 30px;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    background: #054950;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.menu .wrapper {
+}
+.menu .wrapper .menu__links {
+    display: flex;
+    width: 70%;
+}
+.menu__links a {
+    margin-right: 30px;
+}
+.menu .wrapper .menu__misc {
+    justify-self: flex-end;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__misc a {
+    margin-left: 30px;
+}
+
+.attention {
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.attention .wrapper {
+    justify-content: flex-start;
+    color: white;
+}
+.attention__img {
+    width: 50%;
+    height: 100%;
+    background: url('https://www.lavishceramics.com/wp-content/uploads/2021/01/Revive-Pearl.jpg') no-repeat;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.attention__img p {
+    color: #F78F1E;
+    padding: 5px 10px;
+    font-size: 26px;
+    background: black;
+}
+.attention__nav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.attention__nav__top {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.attention__nav__top__block {
+    width: 32%;
+    height: 50px;
+    background: #054950;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.attention__nav__bot {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.attention__nav__bot__block {
+    width: 49%;
+    height: 145px;
+    background: #054950;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.attention__nav__top__block:nth-child(1) {
+    background: #F78F1E;
+    color: black;
+}
+.attention__img:hover, .attention__nav__bot__block:hover, .attention__nav__top__block:hover {
+    transform: scale(1.04);
+}
+
+.product {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.product .wrapper {
+    flex-direction: column;
+    justify-content: center;
+}
+.product__misc {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.product__misc__desc {
+    width: 50%;
+    height: 100%;
+    display: flex;
+}
+.product__misc__desc div {
+    margin-right: 30px;
+}
+.product__misc__controllers {
+    display: flex;
+    width: 40px;
+    justify-content: space-between;
+}
+.product__info__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.product__info {
+    width: 22%;
+    height: 450px;
+}
+.product__info__img {
+    width: 100%;
+    height: 200px;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.product__info__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product__info__img .product__info__img__icons {
+    position: absolute;
+    height: 180px;
+    margin: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+

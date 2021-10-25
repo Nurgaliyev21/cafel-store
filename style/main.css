@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +9,9 @@ a {
     color: inherit;
 }
 body {
-    background: #EDF4F5;
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
 .wrapper {
     width: 70%;
@@ -16,14 +20,39 @@ body {
     align-items: center;
 }
 .text__title {
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+.text__description {
+    font-size: 15px;
 }
 .text__tag{
     height: 20px;
     padding: 5px;
-    background: #054950;
+    background: #ff623d;
     color: white;
     border-radius: 5px;
+    cursor: pointer;
+}
+.btn-primary {
+    width: 180px;
+    height: 40px;
+    border: 2px solid #383838;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 1s;
+}
+.btn-primary:hover {
+    color: #fff;
+    background: #383838;
+    border: 2px solid #383838;
+}
+.underline {
+    width: 60px;
+    height: 5px;
+    background: #ff623d;
 }
 
 
@@ -32,8 +61,6 @@ body {
     height: 35px;
     display: flex;
     justify-content: center;
-}
-.top_info .wrapper {
 }
 .top_info .wrapper .top_info__links {
     width: 40%;
@@ -53,7 +80,7 @@ body {
 .menu {
     width: 100%;
     height: 60px;
-    background: #054950;
+    background: #383838;
     display: flex;
     justify-content: center;
     color: white;
@@ -75,92 +102,54 @@ body {
 .menu__misc a {
     margin-left: 30px;
 }
+.menu__misc a img {
+    width: 18px;
+    /*height: 100%;*/
+}
 
 .attention {
     width: 100%;
-    height: 380px;
+    height: 450px;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    align-items: center;
+    background: url("https://content.s2.prom.st/March2020/221502bg.jpg") no-repeat top center;
+    background-size: cover;
+    font-family: 'Lato', sans-serif;
 }
 .attention .wrapper {
-    justify-content: flex-start;
-    color: white;
-}
-.attention__img {
-    width: 50%;
-    height: 100%;
-    background: url('https://www.lavishceramics.com/wp-content/uploads/2021/01/Revive-Pearl.jpg') no-repeat;
-    display: flex;
-    background-size: cover;
     justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.4s;
-}
-.attention__img p {
-    color: #F78F1E;
-    padding: 5px 10px;
-    font-size: 26px;
-    background: black;
-}
-.attention__nav {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 20px;
-}
-.attention__nav__top {
-    width: 100%;
-    height: 60px;
-    display: flex;
-    justify-content: space-between;
-}
-.attention__nav__top__block {
-    width: 32%;
-    height: 50px;
-    background: #054950;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s;
-}
-.attention__nav__bot {
-    width: 100%;
     height: 320px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: flex-end;
 }
-.attention__nav__bot__block {
-    width: 49%;
-    height: 145px;
-    background: #054950;
+.attention__box {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.attention__nav__top__block:nth-child(1) {
-    background: #F78F1E;
-    color: black;
+.attention__box .wrapper {
+    width: 90%;
+    height: 100%;
+    max-height: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
-.attention__img:hover, .attention__nav__bot__block:hover, .attention__nav__top__block:hover {
-    transform: scale(1.04);
+.attention__box .wrapper * {
+    letter-spacing: 1px;
 }
+
 
 .product {
     width: 100%;
-    height: 500px;
+    height: 600px;
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    /*background: #DBD0C0;*/
 }
 .product .wrapper {
     flex-direction: column;
@@ -184,28 +173,35 @@ body {
     display: flex;
     width: 40px;
     justify-content: space-between;
+    cursor: pointer;
 }
 .product__info__wrapper {
+    height: 450px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .product__info {
-    width: 22%;
+    width: 18%;
     height: 450px;
+    /*border: 1px solid #383838;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: #d5fffc;
 }
 .product__info__img {
     width: 100%;
-    height: 200px;
-    background-size: auto;
+    height: 300px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 .product__info__img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 90%;
+    height: auto;
+    object-fit: contain;
 }
 .product__info__img .product__info__img__icons {
     position: absolute;
@@ -216,4 +212,26 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
+.product__info__details {
+    width: 90%;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 
+}
+.product__info__details .text__title {
+    width: 100%;
+    height: 90px;
+    font-size: 18px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+.product__info__price {
+
+}
